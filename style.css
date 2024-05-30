@@ -1,8 +1,89 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --copy-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --bg-green: hsl(94 20% 35%)
 }
 
 body {
   display: flex;
+  justify-content: space-around;
+}
+
+@font-face {
+  font-family: norse-bold;
+  src: url(./fonts/norse-bold.otf);
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100vh;
+  background-image: url("./images/fern.avif")
+}
+
+.logocontainer {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  padding: 2rem 10rem;
+  margin: 20vh 0;
+  background: hsl(0 0% 10% / 70%);
+}
+
+.logoimage {
+  flex: none;
+  height: 10rem;
+  width: auto;
+}
+
+.logotext {
+  color: white;
+  font-family: norse-bold, sans-serif;
+  font-size: 8rem;
+  flex: 1
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 1.8;
+  height: 100vh;
+  margin: auto;
+  background-color: hsl(0 0 95%);
+}
+
+.info p{
+  margin-bottom: 1rem;
+  font-family: var(--copy-font);
+}
+
+.userform {
+  background-color: white;
+}
+
+.submit {
+  font-family: var(--copy-font);
+}
+
+button {
+  background: var(--bg-green);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  font-family: var(--copy-font);
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--bg-green);
 }
