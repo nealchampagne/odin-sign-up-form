@@ -61,21 +61,19 @@ body {
   font-family: var(--copy-font);
 }
 
-.info {
-  padding: 2rem;
+.info, .submit, .inputsection {
+  padding: 2rem 3rem;
 }
 
-.info p {
+.info p, .inputsection p{
   margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .inputsection, .formcontainer {
   background-color: white;
   width: 100%;
-}
-
-.inputsection p {
- margin-bottom: 1rem;
 }
 
 .formcontainer {
@@ -103,7 +101,7 @@ body {
 input {
   appearance: none;
   padding: 0.25rem 0.5rem;
-  margin: 0.5rem 0;
+  margin: 0.25rem 0 1rem;
   border: 1px solid hsl(220 13% 91%);
   border-radius: 4px;
 }
@@ -118,12 +116,13 @@ input:focus-visible {
   border: 1px solid blue;
 }
 
-#useremail:invalid, #password1:invalid, #password:invalid {
-  border: 1px solid red;
+label {
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
 }
 
-.submit, .inputsection {
-  padding: 2rem;
+#useremail:invalid, #userphone:invalid, #password1:invalid, #password:invalid {
+  border: 1px solid hsl(0, 100%, 45%);
 }
 
 button {
@@ -132,12 +131,10 @@ button {
   border: none;
   border-radius: 0.5rem;
   padding: 1rem 3rem;
+  margin-bottom: 2rem;
   font-family: inherit;
   font-size: 1rem;
-}
-
-.submit p {
-  margin-top: 1rem;
+  box-shadow: 5px 5px 5px hsl(0 0 80%);
 }
 
 a {
