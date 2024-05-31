@@ -98,6 +98,11 @@ body {
   }
 }
 
+label {
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+}
+
 input {
   appearance: none;
   padding: 0.25rem 0.5rem;
@@ -116,11 +121,6 @@ input:focus-visible {
   border: 1px solid blue;
 }
 
-label {
-  font-size: 0.7rem;
-  letter-spacing: 0.1rem;
-}
-
 #useremail:invalid, #userphone:invalid, #password1:invalid, #password:invalid {
   border: 1px solid hsl(0, 100%, 45%);
 }
@@ -133,8 +133,18 @@ button {
   padding: 1rem 3rem;
   margin-bottom: 2rem;
   font-family: inherit;
+  font-weight: 500;
   font-size: 1rem;
   box-shadow: 5px 5px 5px hsl(0 0 80%);
+}
+
+button:hover {
+  background: hsl(94 20% 30%);
+  box-shadow: 5px 5px 5px hsl(0 0 60%);
+}
+
+button:active{
+  box-shadow: none;
 }
 
 a {
