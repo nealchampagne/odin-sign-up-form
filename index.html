@@ -21,34 +21,32 @@
     </div>
     <div class="inputsection">
       <p>Let's do this!</p>
-      <div class="formcontainer">
-        <form id="signup">
-          <div class="field">
-            <label for="firstname">FIRST NAME</label>
-            <input id="firstname" name="firstname" type="text"/>
-          </div>
-          <div class="field">
-            <label for="lastname">LAST NAME</label>
-            <input id="lastname" name="lastname" type="text"/>
-          </div>
-          <div class="field">
-            <label for="useremail">EMAIL</label>
-            <input id="useremail" name="useremail" type="email"/>
-          </div>
-          <div class="field">
-            <label for="userphone">PHONE NUMBER</label>
-            <input id="userphone" name="userphone" type="tel" pattern="[0-9]{10}"/>
-          </div>
-          <div class="field">
-            <label for="password1">PASSWORD</label>
-            <input id="password1" name="password1" type="password"/>
-          </div>
-          <div class="field">
-            <label for="password2">CONFIRM PASSWORD</label>
-            <input id="password2" name="password2" type="password"/>
-          </div>
-        </form>
-      </div>
+      <form id="signup">
+        <div class="field">
+          <label for="firstname">FIRST NAME</label>
+          <input id="firstname" name="firstname" type="text"/>
+        </div>
+        <div class="field">
+          <label for="lastname">LAST NAME</label>
+          <input id="lastname" name="lastname" type="text"/>
+        </div>
+        <div class="field">
+          <label for="useremail">EMAIL</label>
+          <input id="useremail" name="useremail" type="email"/>
+        </div>
+        <div class="field">
+          <label for="userphone">PHONE NUMBER</label>
+          <input id="userphone" name="userphone" type="tel" placeholder="XXX-XXX-XXXX"/>
+        </div>
+        <div class="field">
+          <label for="password1">PASSWORD</label>
+          <input id="password1" name="password1" type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}$"/>
+        </div>
+        <div class="field">
+          <label for="password2">CONFIRM PASSWORD</label>
+          <input id="password2" name="password2" type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}$"/>
+        </div>
+      </form>
     </div>
     <div class="submit">
       <button type="submit" form="signup">Create Account</button>
